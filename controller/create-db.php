@@ -9,8 +9,13 @@ $connection = new mysqli($host, $username, $password); //mysqli was used to buil
     $exists = $connection->select_db($database); //if database exists or doesnt exist it will be stored here
     
     if(!$exists){ //checking if we can connect to the database; ! means doesnt exist
-        echo "database is not here";
+        $query = $connection->query("CREATE DATABASE $database"); //a query that gets applied to our connection; 
+    
+        if($query){ //if this is true then it is successful
+            echo "successfully created database: " . $database;
+        }
     }
+    
     
 
     $connection->close();
