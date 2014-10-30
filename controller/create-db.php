@@ -18,4 +18,10 @@ $connection = new mysqli($host, $username, $password); //mysqli was used to buil
     else {
         echo "database has already been created"; // if the database is already created echo database here
     }
+    $query = $connection->query("CREATE TABLE posts ( " //this creates a table so we can put info in dbase; table is called posts
+            . "id int(11) NOT NULL AUTO_INCREMENT," //the id is an integer 
+            . "title varchar(255) NOT NULL," // the title is a string of characters
+            . "post text NOT NULL," // the post is text
+            . "PRIMARY KEY (id))"); //theres up to 11 values in the integer so we can generate up to 1 billion ids
+    // not null means id cant be empty; 
     $connection->close();
