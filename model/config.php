@@ -1,2 +1,2 @@
 <?php
-    $path = "/noah-blog/"; //when we use path insert this
+    $path = "/noah-blog/"; //when we use the variable path insert this
