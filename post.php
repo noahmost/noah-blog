@@ -1,8 +1,4 @@
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+    require_once(__DIR__ . "/view/header.php"); //plugs in header.php to this
+    require_once(__DIR__ . "/view/forum.php"); //plugs in forum.php to this
+    require_once(__DIR__ . "/view/footer.php"); // plugs in footer.php to this
