@@ -9,6 +9,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!--this makes it responsive with media queries-->
         <link rel="stylesheet" type="text/css" href="css/lol.css"> <!--added css-->
+        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
         <title></title>
     </head>
     <body>

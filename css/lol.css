@@ -11,3 +11,21 @@ and open the template in the editor.
 body{
     background-color: green;
 }
+@media screen and (max-width:959px){
+    body{
+        width: 100%;
+        background-color: blue;
+    }
+}
+@media screen and (max-width:640px) {
+    body{
+        width: 100%;
+        background-color: yellow;
+    }
+}
+@media screen and (max-width:320px) {
+    body{
+        width: 100%;
+        background-color: red;
+    }
+}
