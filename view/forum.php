@@ -12,4 +12,9 @@
         <textarea name="post"></textarea>
         <!--a text area allows the user to type as much text as they want-->
     </div>
+    <div>
+        <button type="submit">Submit: </button> <!--this is a button that should submit the post to
+                                                our database but it basically just refreshes the page-->
+    </div>
+    
 </form>

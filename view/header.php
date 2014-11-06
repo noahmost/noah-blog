@@ -7,7 +7,8 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/lol.css">
+        <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!--this makes it responsive with media queries-->
+        <link rel="stylesheet" type="text/css" href="css/lol.css"> <!--added css-->
         <title></title>
     </head>
     <body>
