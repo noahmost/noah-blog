@@ -1,6 +1,9 @@
+<?php
+    require_once(__DIR__ . "/../model/config.php");
+?>
 <h1>CREATE BLOG POST</h1>
 
-<form>
+<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>"> <!-- method is used to send information; action is where the info will be sent-->
     <div>
         <label for="title">  <!--text that is displayed infront of the  text box-->
         Title:  <!-- displays title infront of the title box-->
