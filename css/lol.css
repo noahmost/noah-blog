@@ -11,7 +11,7 @@ and open the template in the editor.
 body{
     background-color: green;
 }
-@media screen and (max-width:959px){
+@media screen and (max-width:1024px){
     body{
         width: 100%;
         background-color: blue;
