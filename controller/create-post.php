@@ -1,5 +1,5 @@
 <?php
-    require_once(__DIR__ . "/../model/database.php"); //we required database.php so we have access to the variables below
+    require_once(__DIR__ . "/../model/config.php"); //we required config.php so we have access to the variables below
     $connection = new mysqli($host, $username, $password, $database); //these variables exist in database.php and we are connectiing to the database
     $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING); //this post means were sending info; 
                                                   //title means this is how it knows to receive; FILER SANTIZIE makes it a string

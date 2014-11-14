@@ -1,6 +1,6 @@
 <?php
 
-    require_once(__DIR__ . "/../model/database.php"); //inserts code from database.php to dis one; DIR concatinates the actual directory to database
+    require_once(__DIR__ . "/../model/config.php"); //inserts code from config.php to dis one; DIR concatinates the actual directory to database
 $connection = new mysqli($host, $username, $password); //mysqli was used to build a new object
 
     if($connection->connect_error) { //if there is an error
