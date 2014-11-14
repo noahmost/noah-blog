@@ -14,7 +14,7 @@ $connection = new mysqli($host, $username, $password); //mysqli was used to buil
         if($query){ //if this is true then it is successful
             echo "<p>successfully created database: " . $database . "</p>";
         }
-    }
+    } //objects let us store information and modify it and use the information
     else {
         echo "<p>database has already been created</p>"; // if the database is already created echo database here
     }
