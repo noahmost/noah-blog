@@ -7,4 +7,11 @@ class Database{ //classes are used to make code easier to maintain; cut down lin
     private $username;
     private $password;
     private $database;
+
+    public function __construct($host, $username, $password, $database) { //this lets us establish a connection with the variables and it lets us save the information in these variables
+        $this->host = $host;
+        $this->username = $username;
+        $this->password = $password;
+        $this->database = $database;
+    }
 }
