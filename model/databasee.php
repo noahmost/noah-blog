@@ -14,4 +14,15 @@ class Database{ //classes are used to make code easier to maintain; cut down lin
         $this->password = $password;
         $this->database = $database;
     }
+    
+    public function openConnection() {
+        
+    }
+    
+    public function closeConnection() {
+        
+    }
+    public function query($string) { //everytime we call the query function we have to pass it a string 
+        
+    }
 }
