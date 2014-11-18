@@ -26,9 +26,15 @@ class Database { //classes are used to make code easier to maintain; cut down li
             die("<p>error: " . $this->connection->connect_error) . "</p>"; //die no more code to be executed
         }
     }
-
-    public function closeConnection() {
-        
+    // a function is a block of statements that can be used repeatedly;
+    // a function will be executed when it is called on
+    public function closeConnection() { 
+        //isset is basically checking whether or not the variable has been set; 
+        //its checking if there is something inside of the variable; 
+        //if there is nothing it will return no; if there is info it will return true
+        if(isset($this->connection)){ 
+        $this->connection->close();
+        }
     }
 
     public function query($string) { //everytime we call the query function we have to pass it a string 
