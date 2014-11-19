@@ -5,3 +5,7 @@
     $username = "root"; //whenever we use variables for configuration use config.php
     $password = "root";
     $database = "blog_db";
+
+    
+    //this is a database object; the constructor uses this info and stores it in the variables
+    $connection = new Database($host, $username, $password, $database);
