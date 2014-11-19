@@ -38,6 +38,14 @@ class Database { //classes are used to make code easier to maintain; cut down li
     }
 
     public function query($string) { //everytime we call the query function we have to pass it a string 
+        // open a connection
+        $this->openConnection();
+        // here is where we query the database
+        $query = $this->connection->query($string);
+        
+        $this->closeConnection();
+        
+        return $query;
     }
 
 }
