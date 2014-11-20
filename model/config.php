@@ -1,4 +1,6 @@
 <?php
+    require_once(__DIR__ . "/databasee.php"); //used when we want to get something
+
     $path = "/noah-blog/"; //when we use the variable path insert this
     
     $host = "localhost"; //variables
