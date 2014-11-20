@@ -9,6 +9,7 @@ class Database { //classes are used to make code easier to maintain; cut down li
     private $username;
     private $password;
     private $database;
+    public $error;
 
     public function __construct($host, $username, $password, $database) {
         //this lets us establish a connection with the variables and it lets us save the information in these variables
@@ -61,6 +62,11 @@ class Database { //classes are used to make code easier to maintain; cut down li
         $this->openConnection();
         // here is where we query the database; this accesses the connection function then the query function
         $query = $this->connection->query($string);
+        //the exlamation point means if this is true it will show false
+        if(!$query){
+            $this->error = $this->connection->error;
+        }
+
         //closes the connection
         $this->closeConnection();
         //this returns the query variable and prints out what it  contains to the screen
