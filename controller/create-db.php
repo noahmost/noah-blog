@@ -1,7 +1,7 @@
 <?php
 
     require_once(__DIR__ . "/../model/config.php"); //inserts code from config.php to dis one; DIR concatinates the actual directory to database
-    
+    //instead of $connection we put $_SESSION
     $query = $_SESSION["connection"]->query("CREATE TABLE posts ( " //this creates a table so we can put info in dbase; table is called posts
             . "id int(11) NOT NULL AUTO_INCREMENT," //the id is an integer 
             . "title varchar(255) NOT NULL," // the title is a string of characters
