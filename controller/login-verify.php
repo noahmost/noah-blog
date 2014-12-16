@@ -7,7 +7,7 @@
             return false;
         }
         else {
-            if($_SESSION["authenticated"] == true) {
+            if($_SESSION["authenticated"] != true) {
                 return false;
             }
             else{
