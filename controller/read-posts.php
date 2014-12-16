@@ -2,7 +2,7 @@
 
     require_once(__DIR__ . "/../model/config.php");
     $query = "SELECT * FROM posts";
-    $result = $_SESSION["connection"]->query($query);
+    $result = $_SESSION["connection"]->query("$query");
     
     if($result) {
         while($row = mysqli_fetch_array($result)) {
@@ -11,6 +11,7 @@
             echo "<br />";
             echo "<p>" . $row['post'] . "</h1>";
             echo "<br/>";
-            echo "</div";
+            echo "<p> Posted on: " . $row['DateTime'] . "</p>";
+            echo "</div>";
         }
     }
