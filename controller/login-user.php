@@ -10,6 +10,8 @@
         $row = $query->fetch_array();
 //        check if the hashedpassword is equal to the new hashedpassword according to the salt
         if($row["password"] === crypt($password, $row["salt"])){
+//            this makes sure the user has been authenticated in this session
+            $_SESSION["authenticated"] = true;
             echo "<p>Login Successful!</p>";
         }
         else {
