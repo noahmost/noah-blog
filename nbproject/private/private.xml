@@ -7,6 +7,7 @@
             <file>file:/C:/xampp/htdocs/noah-blog/model/databasee.php</file>
             <file>file:/C:/xampp/htdocs/noah-blog/model/config.php</file>
             <file>file:/C:/xampp/htdocs/noah-blog/controller/create-post.php</file>
+            <file>file:/C:/xampp/htdocs/noah-blog/controller/create-user.php</file>
             <file>file:/C:/xampp/htdocs/noah-blog/controller/create-db.php</file>
         </group>
     </open-files>

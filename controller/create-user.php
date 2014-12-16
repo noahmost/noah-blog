@@ -7,7 +7,19 @@ $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
 $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
-echo $password;
 //the $$ are variables to php so we have to split them up; uniqid creates a super unique id for the password
 $salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
-echo $salt;
+//this creates an encrypted password for us with salt
+$hashedPassword = crypt($password, $salt);
+//created a query which inserts into our table called users, were setting email, username, password, and salt
+$query = $_SESSION["connection"]->query("INSERT INTO users SET "
+        . "email = '$email',"
+        . "username = '$username',"
+        . "password = '$hashedPassword',"
+        . "salt = '$salt'");
+if($query) {
+    echo "Succesfuly created user: $username";
+}
+else {
+    echo "<p>" . $_SESSION["connection"]->error . "</p>";
+}
