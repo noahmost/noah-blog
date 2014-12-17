@@ -8,8 +8,19 @@ and open the template in the editor.
     Author     : Student
 */
 
-body{
-    background-color: green;
+.indexbody{
+    background-image: url("https://unsplash.com/photos/Xo3uIN_Q1Y0/download");
+    color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    /*background: url('https://unsplash.com/photos/Xo3uIN_Q1Y0/download') no-repeat center center fixed;*/
+    
+}
+.indexlinks{
+    text-align: center;
+    margin: 10px 10px 10px 10px;
 }
 @media screen and (max-width:1024px){
     body{

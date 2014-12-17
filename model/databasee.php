@@ -33,9 +33,9 @@ class Database { //classes are used to make code easier to maintain; cut down li
                 echo "<p>successfully created database: " . $database . "</p>";
             }
         } //objects let us store information and modify it and use the information
-        else {
-            echo "<p>database has already been created</p>"; // if the database is already created echo database here
-        }
+      // else {
+       //     echo "<p>database has already been created</p>"; // if the database is already created echo database here
+       // }
     }
 
     public function openConnection() {

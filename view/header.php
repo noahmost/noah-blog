@@ -11,6 +11,13 @@ and open the template in the editor.
         <!--i have to call bootstrap first in order for it to work--weird-->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/lol.css"> <!--added css-->
-        <title></title>
+        <title>
+        </title>
     </head>
     <body>
+        <div class="indexlinks">
+            <a href="index.php">Home</a>
+            <a href="register.php">Register Here</a>
+            <a href="login.php">Login here</a>
+            <a href="post.php">Post here</a>
+        </div>
