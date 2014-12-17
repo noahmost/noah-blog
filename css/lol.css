@@ -7,7 +7,23 @@ and open the template in the editor.
     Created on : Nov 5, 2014, 11:14:21 AM
     Author     : Student
 */
-
+.registerbuttonthing{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.registercentering{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+.registerbody{
+    background-image: url("https://unsplash.com/photos/gapYVvUg1M8/download");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+}
 .indexbody{
     background-image: url("https://unsplash.com/photos/Xo3uIN_Q1Y0/download");
     color: black;
@@ -20,6 +36,7 @@ and open the template in the editor.
 }
 .indexlinks{
     text-align: center;
+    font-size: 25px;
     margin: 10px 10px 10px 10px;
 }
 @media screen and (max-width:1024px){

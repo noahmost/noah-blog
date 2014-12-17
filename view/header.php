@@ -16,8 +16,8 @@ and open the template in the editor.
     </head>
     <body>
         <div class="indexlinks">
-            <a href="index.php">Home</a>
-            <a href="register.php">Register Here</a>
-            <a href="login.php">Login here</a>
-            <a href="post.php">Post here</a>
+            <a href="index.php">Home|</a>
+            <a href="register.php">Register Here|</a>
+            <a href="login.php">Login here|</a>
+            <a href="post.php">Post here|</a>
         </div>
